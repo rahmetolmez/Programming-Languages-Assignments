@@ -6,7 +6,7 @@
 %option caseless
 
 NON_ZERO_DIGIT			[1-9]
-DIGIT 					[0-9]*
+DIGIT 				[0-9]*
 IDENTIFIER	    		[a-z][a-z0-9]*
 
 %%
