@@ -44,19 +44,19 @@
 		do
 			(progn
 				;;(format t "q: ~a --- o: ~a~%" i (nth c temp))
-				(if (is-var i)															;if query param is a var
+				(if (is-var i)										;if query param is a var
 					(progn
 						(setf resultg (append resultg (list (list i (nth c temp)))))
 						(setf result (append result (list (cons i (nth c temp)))))
 						;;(format t "current result: ~a~%" result)
 						)
-					(if (is-var (nth c temp))											;if other param is a var
+					(if (is-var (nth c temp))							;if other param is a var
 						(progn
 							(setf resultg (append resultg (list (list (nth c temp) i))))
 							(setf result (append result (list (cons (nth c temp) i))))
 							;;(format t "current result: ~a~%" result)
 							)
-						(if (not (equal i (nth c temp)))								;if neither is a var, check equality
+						(if (not (equal i (nth c temp)))					;if neither is a var, check equality
 							(return-from unify nil))))	
 																						
 				(setf c (+ c 1))))
