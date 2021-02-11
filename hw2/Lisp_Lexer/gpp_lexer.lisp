@@ -164,8 +164,6 @@
 
 					(if (string= stat "mult")
 						(format stream "OP_MULT~%"))
-
-					;(print iter)
 				)
 		)
 	)
