@@ -1,7 +1,7 @@
 ;;;; Parser For The G++ Language
 ;;;  Gets tokens from the lexer and evaluates the results.
-;;;  Implemented by using recursive rescent parsing algorithm.
-;;;  BNF rules were converted to other rules that they are compatible with this algorithm.
+;;;  Implemented by using recursive descent parsing algorithm.
+;;;  BNF rules were converted to other rules that are compatible with this algorithm.
 
 ;;   Author: Rahmet Ali Olmez 
 ;;   January 2021
